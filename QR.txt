@@ -1,0 +1,80 @@
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Personal Information</h2>
+    <p><strong>Name:</strong> Hinthar Sport</p>
+    <p><strong>Phone:</strong> 09253977539</p>
+  </div>
+</body>
+</html>
+import qrcode
+url = "https://www.hintharsport.com"
+qr = qrcode.make(url)
+qr.save("website_qr.png")
+print("✅ QR Code saved as website_qr.png")
